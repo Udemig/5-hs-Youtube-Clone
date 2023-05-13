@@ -17,10 +17,8 @@ export const ContextProvider = ({ children }) => {
     });
   };
 
-  console.log(searchResult);
-
   return (
-    <Context.Provider value={{ selectedCategory, setSelectedCategory }}>
+    <Context.Provider value={{ selectedCategory, setSelectedCategory, searchResult }}>
       {children}
     </Context.Provider>
   );
